@@ -1,0 +1,12 @@
+h1 {
+    color: blue;
+}
+
+.box {
+    height: 100px;
+    width: 500px;
+    padding: 20px;
+    margin: 20px;
+    border: 10px solid black;
+    background-color: #16a8fc;
+}
