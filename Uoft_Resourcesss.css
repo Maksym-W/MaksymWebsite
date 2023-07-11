@@ -1,0 +1,264 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
+
+html, body, table {
+  background: #fff;
+  color: #3b3b3b;
+  font-family: 'Source Sans Pro', Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+div.content {
+  clear: both;
+  position: absolute;
+  top: 0;
+  left: 200px;  
+  float: left;
+  margin-left: 50px;
+  padding-top: 50px;
+  width: 70%; 
+  font-family: 'Source Sans Pro', Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+}
+
+
+img {/* border style for all images */
+  border: 0;
+}
+
+img.b4 {/* scalable em size class 468px/60px banners */
+  width: 16.83em; /* replaces 468px width */
+  height: 9.06em; /* replaces 60px height */
+}
+
+h2 {
+  color: #2980b9;
+}
+
+::selection {
+	background: #2494B9;
+	color: #fff;
+	text-shadow: none
+}
+
+a {
+	text-decoration: none;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;}
+
+a:link {
+  color: #557A99; /*#2494B9;*/
+}
+
+nav a:link {
+	color: #4583A3;
+}
+
+a:visited {
+  color: #557A99;
+}
+
+a:hover {
+	color: #aaa;
+}
+
+nav a:hover {
+	color: #aaa;
+}
+
+table
+{
+  margin: 0 0 40px 0;  
+  border-collapse:collapse;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  border: none;
+  color: #3b3b3b;
+}
+
+th, td
+{
+  border: none;
+  padding: 10px;
+}
+
+td {
+  border-left: solid 1px #fff;
+}
+
+.no-border {
+	border-left: none;
+}
+
+td ul {
+	list-style-type: circle;
+}
+
+td strong {
+	color: rgba(40, 75, 94, 0.5);
+}
+
+th {
+    background: #2980b9;
+    color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+        background-color: #f6f6f6;
+    }
+tbody tr:nth-child(even) {
+        background-color: #e9e9e9;
+    }
+
+td {
+	padding: 10px;
+}
+
+td li {
+	padding-right: 15px;
+}
+	
+	
+	table { margin-bottom: 50px; }
+	
+div.title {
+  margin-bottom: 40px; 
+  padding-left: 40px;
+  padding-top: 0px;
+}
+
+h1 {
+	font-size: 35pt;
+	line-height: 2px;
+}
+
+div.title a:hover {
+	color: rgba(69, 131, 163, 0.8);
+}
+
+div.title h2 {
+	line-height: 2px;
+	font-size: 14pt;
+	font-weight: 400;
+	text-align: left;
+	color: #999;
+}
+
+.clear {
+  clear: both;
+  font-size: 1px;
+}
+
+.footer {
+  clear: none;
+  margin-left: 20%;
+  margin-top: 1px;
+  text-align: right;
+  border-top: solid 3px white;
+}
+
+.footer .left {
+  margin-top: 1px;
+  float: left;
+  text-align: left;
+  width: 60%;
+}
+
+.footer .right {
+  margin-top: 1px;
+  float: right;
+  text-align: right;
+  width: 40%;
+}
+
+.spacer {
+  clear: both;
+}
+
+p {
+  padding: 0;
+  margin-top: 0px;
+}
+
+dt {
+  font-weight: bold;
+}
+/* look at me */
+nav {
+	width: 10px;
+	height: 1%;
+	background: white;
+	position:relative;
+	top: 0;
+	left: 0;
+	min-height: 75px;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 13pt;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	padding: 10px 0;
+}
+
+.spacer {
+	min-height: 50px;
+}
+
+/* -- older navigation 
+div.navigation {
+  clear: both;
+  position: absolute;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
+  font-family: Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+ background-image: url("http://www.cdf.toronto.edu/~csc108h/fall/images/hbg70.jpg");
+  background-color: #106E17;
+  color: white;
+}
+
+nav a {
+  text-align: right;
+  color: #557A99;
+}
+
+div.navigation p {
+  font-family: Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+div.navigation p:first-child {
+  border-top: none;
+}
+
+div.navigation a, div.navigation em {
+  display: block;
+  margin: 0 0.5em;
+}
+
+div.navigation a, div.navigation em {
+  border-top: 2px solid white;
+}
+
+div.navigation a:first-child {
+  border-top: none;
+}
+
+div.navigation a:link {
+  text-decoration: none;
+  color: white;
+}
+
+div.navigation a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+div.navigation a:hover {
+  background: white;
+  color: #106E17;
+}**/

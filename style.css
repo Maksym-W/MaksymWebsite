@@ -22,7 +22,7 @@ html, body {
 }
 
 .nav a {
-    padding: .5em;
+    padding: .075em;
     color: white;
     text-decoration: none;
 }
@@ -63,6 +63,12 @@ h1 {
     background-color: #16a8fc;
 }
 
-html{
-    background-color:white;
-}
+html, body, table {
+    background: #fff;
+    color: #3b3b3b;
+    font-family: 'Source Sans Pro', Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+
+  
