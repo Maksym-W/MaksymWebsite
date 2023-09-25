@@ -63,6 +63,15 @@ h1 {
     background-color: #16a8fc;
 }
 
+.overlay-image {
+    position: absolute; /* Position the image absolutely within the div */
+    top: 1000; /* Adjust the top and left values to position the image where you want */
+    left: 10;
+    width: 15%; /* Make the image take the full width of the parent div */
+    height: 15%; /* Make the image take the full height of the parent div */
+    object-fit: cover; /* Scale the image to cover the entire div while maintaining its aspect ratio */
+  }
+
 html, body, table {
     background: #fff;
     color: #3b3b3b;
