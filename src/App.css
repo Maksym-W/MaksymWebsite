@@ -15,6 +15,7 @@
 
 .App-header {
   background: linear-gradient(to bottom, #282c34 30%, #0398fc 150%);
+  overflow: hidden;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +23,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  height: 100vh
 }
 
 .App-link {
@@ -39,6 +41,7 @@
 
 .App-nav {
   background-color: #282c34; /* Dark background like the header */
+  overflow: hidden;
   color: white;
   padding: 10px 20px; /* Padding around the navbar content */
   display: flex; /* Aligns links in a row */
@@ -87,6 +90,8 @@
   }
 }
 
+
+
 .projects {
   background: linear-gradient(to bottom, #282c34 30%, #0398fc 150%);
   color: white;
@@ -101,6 +106,8 @@
 
 .resources {
   background: linear-gradient(to bottom, #282c34 30%, #0398fc 150%);
+  overflow: auto;
+  background-color: #0398fc;
   color: white;
   position: absolute;
   top: 0;

@@ -1,102 +1,74 @@
-//import logo from './logo.svg';
-import logo from './max.jpg';
-import './App.css';
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import UofTResources from './UofTResources';
-
+import Home from './pages/Home';
+import UofTResources from './pages/UofTResources';
+import Button from '@mui/material/Button';
 
 function App() {
-  const [animateProjects, setAnimateProjects] = useState(false);
-  const [animateHome, setAnimateHome] = useState(false);
-  const [animateResources, setAnimateResources] = useState(false);
+  const [activeTab, setActiveTab] = useState('home');
 
-  const handleProjectsClick = () => {
-    setAnimateHome(false);
-    setAnimateResources(false);
-    setAnimateProjects(true);
-    setTimeout(() => {
-      console.log("Animation completed.");
-    }, 500);
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
   };
 
-
-  const handleHomeClick = () => {
-    setAnimateHome(true);
-    setAnimateProjects(false);
-    setAnimateResources(false);
-    setTimeout(() => {
-      console.log("Animation completed.");
-    }, 500);
+  const appStyle = {
+    background: "linear-gradient(to bottom, #282c34 30%, #0398fc 150%)",
+    height: '100vh',
+    width: '100vw',
+    overflow: 'auto'
   };
 
-  const handleResourcesClick = () => {
-    setAnimateHome(false);
-    setAnimateProjects(false);
-    setAnimateResources(true);
-    setTimeout(() => {
-      console.log("Animation completed.");
-    }, 500);
+  const navStyle = {
+    color: 'white',
+    padding: '10px 20px',
+    display: 'flex',
+    justifyContent: 'space-around',
+    position: 'fixed',
+    top: 0,
+    width: '100%',
+    zIndex: 1000
   };
-  
-  //Above are constants and functions for animation!! Duh!
+
+  const navItemStyle = {
+    color: 'white', backgroundColor: '#15639A', borderColor: 'green',
+    padding: '5px', 
+    fontSize: '16px',
+  };
+
+// The above stuff is the CSS Styles. Below is the component we return.
 
   return (
-    <div className="App">
+    <>
+    <div style={appStyle}>
 
-      <nav className="App-nav">
-        <a href="#home" onClick={handleHomeClick} className="nav-item">Home</a>
-        <a href="#projects" onClick={handleProjectsClick} className="nav-item">TODO: Projects</a>
-        <a href="#resources" onClick={handleResourcesClick} className="nav-item">UofT Resources</a>
-        <a href="https://www.overleaf.com/read/xyvycpwfxnxj" target="_blank" rel="noopener noreferrer" className="nav-item">Resume</a>
+      <nav style={navStyle}>
+        <a href="#home">
+        <Button
+          variant="contained"
+          style={navItemStyle}
+          onClick={() => handleTabChange('home')}
+          disabled={activeTab === 'home'}
+        >Home</Button>
+        </a>
+        <a href="#UofTResources">
+        <Button
+          variant="contained"
+          style={navItemStyle}
+          onClick={() => handleTabChange('UofTResources')}
+          disabled={activeTab === 'UofTResources'}
+        >UofTResources</Button>
+        </a>
+        <a href="https://www.overleaf.com/read/xyvycpwfxnxj" target="_blank" rel="noopener noreferrer" >
+          <Button variant="contained" style={navItemStyle}>Resume</Button>
+        </a>
       </nav>
+      <div style={{marginTop: '60px'}}></div> {/* This is just for padding */}
+      <hr />
 
-      <div className={`content ${animateHome ? 'slide-in-right' : ''} ${animateProjects ? 'slide-out-left' : ''} ${animateResources ? 'slide-out-left-super' : ''}`}>
-        <Home />
-        <Projects />
-        <UofTResources />
-      </div>
-
+      {activeTab === 'home' && <Home />}
+      {activeTab === 'UofTResources' && <UofTResources />}
     </div>
+    </>
   );
 }
-
-
-function Home() {
-  return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
-  );
-}
-
-function Projects() {
-  return (
-    <div className="projects">
-      <div style={{ marginTop: '75px' }}></div>
-
-      {/* Contents of the Projects section */}
-      <h1>Projects</h1>
-      <p>This is the Projects section.</p>
-    </div>
-  );
-}
-
-
-
-
 
 export default App;
-
-
