@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+//import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion' https://www.youtube.com/watch?v=pTinipkJBcs make folder for animations?
 import Home from './pages/Home';
 import UofTResources from './pages/UofTResources';
 import Button from '@mui/material/Button';
@@ -19,6 +20,7 @@ function App() {
 
   const navStyle = {
     color: 'white',
+    backgroundColor: '#282c34',
     padding: '10px 20px',
     display: 'flex',
     justifyContent: 'space-around',
@@ -49,6 +51,7 @@ function App() {
           disabled={activeTab === 'home'}
         >Home</Button>
         </a>
+        
         <a href="#UofTResources">
         <Button
           variant="contained"
@@ -57,18 +60,29 @@ function App() {
           disabled={activeTab === 'UofTResources'}
         >UofTResources</Button>
         </a>
+
         <a href="https://www.overleaf.com/read/xyvycpwfxnxj" target="_blank" rel="noopener noreferrer" >
           <Button variant="contained" style={navItemStyle}>Resume</Button>
         </a>
       </nav>
+      
       <div style={{marginTop: '60px'}}></div> {/* This is just for padding */}
-      <hr />
+      <hr style={{
+        position: 'fixed',
+        top: '50px',  // Adjust as needed
+        width: '100%',
+        border: 'none',
+        height: '2px',
+        backgroundColor: '#fff',  // Adjust as needed
+      }} />
 
       {activeTab === 'home' && <Home />}
-      {activeTab === 'UofTResources' && <UofTResources />}
+      {activeTab === 'UofTResources' && <UofTResources /> /* TODO FIGURE OUT HOW TO PASS IN ARGUEMENTS */} 
     </div>
     </>
   );
 }
 
 export default App;
+
+// TODO Figure out the difference between div style= and div className=
