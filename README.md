@@ -1,4 +1,4 @@
-plz work
+Ive spent alot of time today trying to get this to work
 
 # Getting Started with Create React App
 
