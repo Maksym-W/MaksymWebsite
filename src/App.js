@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-//import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion' https://www.youtube.com/watch?v=pTinipkJBcs make folder for animations?
 import Home from './pages/Home';
 import UofTResources from './pages/UofTResources';
 import Button from '@mui/material/Button';
+import CsProjects from './pages/CsProjects';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('home');
+  const [activeTab, setActiveTab] = useState('home'); // Maybe there is a more elegant way of doing this? TODO
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -52,6 +52,15 @@ function App() {
         >Home</Button>
         </a>
         
+        <a href="#CsProjects">
+        <Button
+          variant="contained"
+          style={navItemStyle}
+          onClick={() => handleTabChange('CsProjects')}
+          disabled={activeTab === 'CsProjects'}
+        >Cs Projects</Button>
+        </a>
+
         <a href="#UofTResources">
         <Button
           variant="contained"
@@ -78,6 +87,7 @@ function App() {
 
       {activeTab === 'home' && <Home />}
       {activeTab === 'UofTResources' && <UofTResources /> /* TODO FIGURE OUT HOW TO PASS IN ARGUEMENTS */} 
+      {activeTab === 'CsProjects' && <CsProjects /> /* TODO FIGURE OUT HOW TO PASS IN ARGUEMENTS */} 
     </div>
     </>
   );

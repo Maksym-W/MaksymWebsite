@@ -9,8 +9,8 @@ export default function Home() {
         'margin-right': 'auto',
         marginTop: '50px',
         height: 'auto',
-        width: '40%',
-        border: '5px solid #e4ddca',
+        width: '50%',
+        border: '25px solid #e4ddca',
         borderImage: 'linear-gradient(to bottom, #e4ddca, transparent) 1 49%'
       };
 
@@ -26,7 +26,7 @@ export default function Home() {
             <div style={{marginTop: '20px'}}></div> {/* This is just for padding */}
 
             <h1 style={{fontSize: '75px', ...textStyle}}>
-                I am Maksym Woychyshyn.
+                I am Maksym Woychyshyn
             </h1>
             
             <img src={maxPicture} className="App-logo" alt="logo" style={pictureStyle} />
@@ -55,7 +55,6 @@ export default function Home() {
                 <h3 style={{ flex: '0 0 50%', marginLeft: '60px' }}>
                 Im still trying to figure out what would be cool to put here. For now, I interned at the Canadian Government! Isn't that cool!? Also Im open to intern in fall 2024!
                 </h3>
-
             </div>
         </AnimatedPage>
     )
