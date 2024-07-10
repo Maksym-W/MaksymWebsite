@@ -91,6 +91,12 @@ function UofTResources() {
         <a href="https://www.teach.cs.toronto.edu/~csc411h/winter/" target =" blank" style={textStyle}>
             CSC411 (Machine Learning and Data Mining)<br></br>
         </a>
+	<a href="https://github.com/alecjacobson/geometry-processing" target =" blank" style={textStyle}>
+            CSC419 (Geometric Processing)<br></br>
+        </a>
+	<a href="https://github.com/alecjacobson/geometry-processing-csc2520" target =" blank" style={textStyle}>
+            CSC2520 (Geometric Processing [Grad Course Version])<br></br>
+        </a>
         <a href="https://www.cs.toronto.edu/~frank/csc2501/" target =" blank" style={textStyle}>
             CSC485 (Computational Linguistics)<br></br>
         </a>
@@ -146,6 +152,11 @@ function UofTResources() {
         <a href="https://www.cs.toronto.edu/~vinodv/COURSES/MAT302-S13/index.html" target =" blank" style={textStyle}>
             MAT302 (Introduction to Algebraic Cryptography) <br></br>
         </a>
+	<a href="https://github.com/siefkenj/2023-MAT-335-webpage" target =" blank" style={textStyle}>
+            MAT335 (Chaos Theory) <br></br>
+        </a>
+
+
 
         <h2 style={{color: 'white'}}>These sites are for Physics</h2>
         <hr />
