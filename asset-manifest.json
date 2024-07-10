@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/src/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/src/static/js/main.d384df52.chunk.js",
-    "main.js.map": "/src/static/js/main.d384df52.chunk.js.map",
-    "runtime-main.js": "/src/static/js/runtime-main.1e09b411.js",
-    "runtime-main.js.map": "/src/static/js/runtime-main.1e09b411.js.map",
-    "static/js/2.a2e48fdf.chunk.js": "/src/static/js/2.a2e48fdf.chunk.js",
-    "static/js/2.a2e48fdf.chunk.js.map": "/src/static/js/2.a2e48fdf.chunk.js.map",
-    "static/js/3.8b130bed.chunk.js": "/src/static/js/3.8b130bed.chunk.js",
-    "static/js/3.8b130bed.chunk.js.map": "/src/static/js/3.8b130bed.chunk.js.map",
-    "index.html": "/src/index.html",
-    "precache-manifest.90cc6c23e93fba55bc80fd2391373ec0.js": "/src/precache-manifest.90cc6c23e93fba55bc80fd2391373ec0.js",
-    "service-worker.js": "/src/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/src/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.a2e48fdf.chunk.js.LICENSE.txt": "/src/static/js/2.a2e48fdf.chunk.js.LICENSE.txt",
-    "static/media/Robotics1.jpg": "/src/static/media/Robotics1.489d844c.jpg",
-    "static/media/max.jpg": "/src/static/media/max.067dee56.jpg"
+    "main.css": "/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/static/js/main.7f30a395.chunk.js",
+    "main.js.map": "/static/js/main.7f30a395.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ae9843fe.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ae9843fe.js.map",
+    "static/js/2.a2e48fdf.chunk.js": "/static/js/2.a2e48fdf.chunk.js",
+    "static/js/2.a2e48fdf.chunk.js.map": "/static/js/2.a2e48fdf.chunk.js.map",
+    "static/js/3.8b130bed.chunk.js": "/static/js/3.8b130bed.chunk.js",
+    "static/js/3.8b130bed.chunk.js.map": "/static/js/3.8b130bed.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.59fef3a4462d4cd379404a0466bd37da.js": "/precache-manifest.59fef3a4462d4cd379404a0466bd37da.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.a2e48fdf.chunk.js.LICENSE.txt": "/static/js/2.a2e48fdf.chunk.js.LICENSE.txt",
+    "static/media/Robotics1.jpg": "/static/media/Robotics1.489d844c.jpg",
+    "static/media/max.jpg": "/static/media/max.067dee56.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1e09b411.js",
+    "static/js/runtime-main.ae9843fe.js",
     "static/js/2.a2e48fdf.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.d384df52.chunk.js"
+    "static/js/main.7f30a395.chunk.js"
   ]
 }
