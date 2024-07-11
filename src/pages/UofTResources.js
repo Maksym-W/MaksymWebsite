@@ -153,7 +153,10 @@ function UofTResources() {
             MAT302 (Introduction to Algebraic Cryptography) <br></br>
         </a>
 	<a href="https://github.com/siefkenj/2023-MAT-335-webpage" target =" blank" style={textStyle}>
-            MAT335 (Chaos Theory) <br></br>
+            MAT335 (Chaos Theory 2023) <br></br>
+        </a>
+	<a href="https://www.math.toronto.edu/afenyes/teaching/mat335-winter2019/" target =" blank" style={textStyle}
+            MAT335 (Chaos Theory 2019)br></br>
         </a>
 
 
