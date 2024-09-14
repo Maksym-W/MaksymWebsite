@@ -52,8 +52,15 @@ export default function Home() {
                  emails m.woychyshyn@mail.utoronto.ca or maksymwoychyshyn@gmail.com.
                 </h3>
 
-                <h3 style={{ flex: '0 0 50%', marginLeft: '60px' }}>
-                Im still trying to figure out what would be cool to put here. For now, I interned at the Canadian Government! Isn't that cool!? Also Im open to intern in fall 2024!
+                <h3 style={{ color: 'white', flex: '0 0 50%', marginLeft: '60px' }}>
+                As for future plans, I want to get into researching alot of CS topics. I have a list of things that I want to do research in that is included but not limited to:
+                Robotics, Machine Learning, Computer Graphics, Computer Systems, and Information Security. Lots of things to learn!
+                <br></br><br></br>
+                Im currently focusing on computer systems, specifically file systems. If you want to discuss something regarding file systems, please do reach out!
+                <br></br><br></br>
+                Aside from researching, like many people these days, I need a job! A short description of my resume is: I did a software internship at the government in the summer and fall terms
+                of 2024, and I am a good leader as a president in the robotics club. I do projects around video games and robotics. If you have a position open
+                in the summer of 2025 (Preferably something backend focused),  please absolutely do reach out!
                 </h3>
             </div>
         </AnimatedPage>

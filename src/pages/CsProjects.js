@@ -36,6 +36,9 @@ export default function CsProjects() {
                  only that it has tubes sticking out of it that you can put into a bottle of coca-cola/pepsi/etc and it can make a drink for you. 
                 In the images below, you can see the current state of it. 
                 I still need to code out the arduino board and connect the pumps to it. Il upload the code when I have time to make it 
+                <hr></hr>
+                Im also working on a video game adaptation of blood on the clocktower. Currently, the code just sets up a server that other 
+                computers on the local network can connect to, plus some incomplete game logic. Will upload more details about it soon.
                 </h3>
                 
                 {/* <a href="#flip" target="_blank" rel="noopener noreferrer" >

@@ -5,6 +5,7 @@ import AnimatedPage from '../animations/transitions';
 function UofTResources() {
     const textStyle =  {
         color: 'gray',
+        lineHeight: '1.5'
     }
   
     return (
@@ -25,11 +26,11 @@ function UofTResources() {
 
         <h2 style={{color: 'white'}}>These sites are for Mathematics</h2>
         <hr />
-      <a href="https://mcs.utm.utoronto.ca/~108s21/index.html" target =" blank" style={textStyle}>
+        <a href="https://mcs.utm.utoronto.ca/~108s21/index.html" target =" blank" style={textStyle}>
             CSC108 (Intro to Computer Programming) <br></br>
         </a>
-        <a href="https://mcs.utm.utoronto.ca/~207/index.html" target =" blank" style={textStyle}>
-            CSC207 (Software Design) <br></br>
+        <a href="https://www.cs.toronto.edu/~david/course-notes/csc110-111/" target =" blank" style={textStyle}>
+            CSC110/CSC111 (Foundations of Computer Science)<br></br>
         </a>
         <a href="https://www.cs.toronto.edu/~shaharry/csc236/" target =" blank" style={textStyle}>
             CSC236 (Introduction to the Theory of Computation)<br></br>
@@ -46,6 +47,9 @@ function UofTResources() {
         <a href="http://www.cs.toronto.edu/~sme/CSC302/" target =" blank" style={textStyle}>
             CSC302 (Software Engineering II)<br></br>
         </a>
+        <a href="https://www.cs.toronto.edu/~nisarg/teaching/304f22/" target =" blank" style={textStyle}>
+            CSC304 (Algorithmic Game Theory)<br></br>
+        </a>
         <a href="https://www.cs.toronto.edu/~mashiyat/csc309/index.htm#top" target =" blank" style={textStyle}>
             CSC309 (Web programming in 2016) <br></br>
         </a>
@@ -55,23 +59,8 @@ function UofTResources() {
         <a href="https://www.cs.toronto.edu/~rgrosse/courses/csc311_f21/" target =" blank" style={textStyle}>
             CSC311 (Machine Learning) <br></br>
         </a>
-        <a href="https://www.cs.toronto.edu/~lczhang/csc338_20191/" target =" blank" style={textStyle}>
-            CSC338 (Numerical Methods) <br></br>
-        </a>
-        <a href="https://mcs.utm.utoronto.ca/~358/" target =" blank" style={textStyle}>
-            CSC358 (Computer Networks) <br></br>
-        </a>
-        <a href="https://www.cs.utoronto.ca/~fidler/teaching/2021/CSC420.html" target =" blank" style={textStyle}>
-            CSC420 (Image Understanding) <br></br>
-        </a>
-        <a href="https://mcs.utm.utoronto.ca/~338/" target =" blank" style={textStyle}>
-            CSC338 (Numerical Methods)<br></br>
-        </a>
-        <a href="https://www.cs.toronto.edu/~florian/courses/csc477_fall22/" target =" blank" style={textStyle}>
-            CSC477 (Mobile Robotics) <br></br>
-        </a>
-        <a href="https://www.cs.toronto.edu/~lyan/csc384/w2/csc384ch3search1.pdf" target =" blank" style={textStyle}>
-            CSC384 (Introduction to Artificial Inteligence) <br></br>
+        <a href="https://www.cs.toronto.edu/~kyros/courses/320/" target =" blank" style={textStyle}>
+            CSC320 (Introduction to Visual Computing) <br></br>
         </a>
         <a href="https://utsc.utoronto.ca/~atafliovich/cscc24/ " target =" blank" style={textStyle}>
             CSCC24 
@@ -79,32 +68,53 @@ function UofTResources() {
         <a href="https://www.cs.utoronto.ca/~trebla/CSCC24-2023-Summer/" target =" blank" style={textStyle}>
             CSCC24 <br></br>
         </a>
-        <a href="https://www.cs.utoronto.ca/~elias/csc404/" target =" blank" style={textStyle}>
-            CSC404 (Intro to Video Game Design) <br></br>
+        <a href="https://www.cs.toronto.edu/~lczhang/csc338_20191/" target =" blank" style={textStyle}>
+            CSC338 (Numerical Methods) <br></br>
         </a>
-        <a href="https://www.cs.toronto.edu/~nisarg/teaching/304f22/" target =" blank" style={textStyle}>
-            CSC304 (Algorithmic Game Theory)<br></br>
+        <a href="https://mcs.utm.utoronto.ca/~338/" target =" blank" style={textStyle}>
+            CSC338 (Numerical Methods)<br></br>
+        </a>
+        <a href="https://mcs.utm.utoronto.ca/~358/" target =" blank" style={textStyle}>
+            CSC358 (Computer Networks) <br></br>
         </a>
         <a href="https://www.teach.cs.toronto.edu/~csc369h/summer/content.shtml" target =" blank" style={textStyle}>
             CSC369 (Operating Systems)<br></br>
         </a>
+        <a href="https://www.cs.toronto.edu/~nisarg/teaching/373f21/" target =" blank" style={textStyle}>
+            CSC373 (Algorithm Design, Analysis, and Complexity) <br></br>
+        </a>
+        <a href="https://www.cs.toronto.edu/~lyan/csc384/w2/csc384ch3search1.pdf" target =" blank" style={textStyle}>
+            CSC384 (Introduction to Artificial Inteligence) <br></br>
+        </a>
+        <a href="https://www.cs.utoronto.ca/~elias/csc404/" target =" blank" style={textStyle}>
+            CSC404 (Intro to Video Game Design) <br></br>
+        </a>
+        <a href="https://www.cs.toronto.edu/~azadeh/teaching/csc410/" target =" blank" style={textStyle}>
+            CSC410 (Software Verification) <br></br>
+        </a>
         <a href="https://www.teach.cs.toronto.edu/~csc411h/winter/" target =" blank" style={textStyle}>
             CSC411 (Machine Learning and Data Mining)<br></br>
         </a>
-	<a href="https://github.com/alecjacobson/geometry-processing" target =" blank" style={textStyle}>
+        <a href="https://github.com/alecjacobson/geometry-processing" target =" blank" style={textStyle}>
             CSC419 (Geometric Processing)<br></br>
         </a>
-	<a href="https://github.com/alecjacobson/geometry-processing-csc2520" target =" blank" style={textStyle}>
-            CSC2520 (Geometric Processing [Grad Course Version])<br></br>
+        <a href="https://www.cs.utoronto.ca/~fidler/teaching/2021/CSC420.html" target =" blank" style={textStyle}>
+            CSC420 (Image Understanding) <br></br>
+        </a>
+        <a href="https://www.cs.toronto.edu/~yganjali/courses/csc458/" target =" blank" style={textStyle}>
+            CSC458 (Computer Networks)<br></br>
+        </a>
+        <a href="https://www.cs.toronto.edu/~hehner/465-2104/" target =" blank" style={textStyle}>
+            CSC465 (Formal Methods in Software Design)<br></br>
+        </a>
+        <a href="https://www.cs.toronto.edu/~florian/courses/csc477_fall22/" target =" blank" style={textStyle}>
+            CSC477 (Mobile Robotics) <br></br>
         </a>
         <a href="https://www.cs.toronto.edu/~frank/csc2501/" target =" blank" style={textStyle}>
             CSC485 (Computational Linguistics)<br></br>
         </a>
-        <a href="https://www.cs.toronto.edu/~david/course-notes/csc110-111/" target =" blank" style={textStyle}>
-            CSC110/CSC111 (Foundations of Computer Science)<br></br>
-        </a>
-        <a href="https://www.cs.toronto.edu/~hehner/465-2104/" target =" blank" style={textStyle}>
-            CSC465 (Formal Methods in Software Design)<br></br>
+	    <a href="https://github.com/alecjacobson/geometry-processing-csc2520" target =" blank" style={textStyle}>
+            CSC2520 (Geometric Processing [Grad Course Version])<br></br>
         </a>
         <a href="http://www.cs.toronto.edu/~chechik/courses18/csc2125/" target =" blank" style={textStyle}>
             CSC2125 (Modeling Methods, Tools and Techniques)<br></br>
@@ -112,12 +122,7 @@ function UofTResources() {
         <a href="https://www.cs.toronto.edu/~florian/courses/csc2626w21/" target =" blank" style={textStyle}>
             CSC2626 (Imitation Learning for Robotics)<br></br>
         </a>
-        <a href="https://www.cs.toronto.edu/~yganjali/courses/csc458/" target =" blank" style={textStyle}>
-            CSC458 (Computer Networks)<br></br>
-        </a>
-        <a href="https://www.cs.toronto.edu/~nisarg/teaching/373f21/" target =" blank" style={textStyle}>
-            CSC373 (Algorithm Design, Analysis, and Complexity) <br></br>
-        </a>
+
         
 
         <h2 style={{color: 'white'}}>These sites are for Mathematics</h2>
@@ -152,11 +157,11 @@ function UofTResources() {
         <a href="https://www.cs.toronto.edu/~vinodv/COURSES/MAT302-S13/index.html" target =" blank" style={textStyle}>
             MAT302 (Introduction to Algebraic Cryptography) <br></br>
         </a>
-	<a href="https://github.com/siefkenj/2023-MAT-335-webpage" target =" blank" style={textStyle}>
+	    <a href="https://github.com/siefkenj/2023-MAT-335-webpage" target =" blank" style={textStyle}>
             MAT335 (Chaos Theory 2023) <br></br>
         </a>
-	<a href="https://www.math.toronto.edu/afenyes/teaching/mat335-winter2019/" target =" blank" style={textStyle}
-            MAT335 (Chaos Theory 2019)br></br>
+        <a href="https://www.math.toronto.edu/afenyes/teaching/mat335-winter2019/" target =" blank" style={textStyle}>
+            MAT335 (Chaos Theory 2019) <br></br>
         </a>
 
 
