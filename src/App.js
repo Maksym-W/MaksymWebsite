@@ -3,9 +3,10 @@ import Home from './pages/Home';
 import UofTResources from './pages/UofTResources';
 import Button from '@mui/material/Button';
 import CsProjects from './pages/CsProjects';
+import NavBar from './components/NavBar'; 
 
 function App() {
-  const [activeTab, setActiveTab] = useState('home'); // Maybe there is a more elegant way of doing this? TODO
+  const [activeTab, setActiveTab] = useState('home'); 
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -42,40 +43,16 @@ function App() {
     <>
     <div style={appStyle}>
 
-      <nav style={navStyle}>
-        <a href="#home">
-        <Button
-          variant="contained"
-          style={navItemStyle}
-          onClick={() => handleTabChange('home')}
-          disabled={activeTab === 'home'}
-        >Home</Button>
-        </a>
-        
-        <a href="#CsProjects">
-        <Button
-          variant="contained"
-          style={navItemStyle}
-          onClick={() => handleTabChange('CsProjects')}
-          disabled={activeTab === 'CsProjects'}
-        >Cs Projects</Button>
-        </a>
-
-        <a href="#UofTResources">
-        <Button
-          variant="contained"
-          style={navItemStyle}
-          onClick={() => handleTabChange('UofTResources')}
-          disabled={activeTab === 'UofTResources'}
-        >UofTResources</Button>
-        </a>
-
-        <a href="https://www.overleaf.com/read/xyvycpwfxnxj" target="_blank" rel="noopener noreferrer" >
-          <Button variant="contained" style={navItemStyle}>Resume</Button>
-        </a>
-      </nav>
+      <NavBar
+        activeTab={activeTab}
+        handleTabChange={handleTabChange}
+        navStyle={navStyle}
+        navItemStyle={navItemStyle}
+      />
       
-      <div style={{marginTop: '60px'}}></div> {/* This is just for padding */}
+      <div style={{marginTop: '60px'}}></div> 
+      {/* This is just for padding */}
+      
       <hr style={{
         position: 'fixed',
         top: '50px',  // Adjust as needed
@@ -85,9 +62,10 @@ function App() {
         backgroundColor: '#fff',  // Adjust as needed
       }} />
 
+      {/* At some point, i would want to code in an app router, the stuff below I wrote before i knew about it. */}
       {activeTab === 'home' && <Home />}
-      {activeTab === 'UofTResources' && <UofTResources /> /* TODO FIGURE OUT HOW TO PASS IN ARGUEMENTS */} 
-      {activeTab === 'CsProjects' && <CsProjects /> /* TODO FIGURE OUT HOW TO PASS IN ARGUEMENTS */} 
+      {activeTab === 'UofTResources' && <UofTResources /> } 
+      {activeTab === 'CsProjects' && <CsProjects />} 
     </div>
     </>
   );

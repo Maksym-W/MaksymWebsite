@@ -15,7 +15,7 @@ export default function CsProjects() {
         'margin-left': 'auto',
         'margin-right': 'auto',
         marginTop: '50px',
-        height: 'auto',
+        height: (1750 / 3264) * 2448,
         width: '40%',
         border: '25px solid #e4ddca',
         borderImage: 'linear-gradient(to bottom, #e4ddca, transparent) 1 49%'
@@ -134,7 +134,10 @@ export default function CsProjects() {
 
                 <hr></hr>
                 Im also working on a video game adaptation of blood on the clocktower. Currently, the code just sets up a server that other 
-                computers on the local network can connect to, plus some incomplete game logic. Will upload more details about it soon.
+                computers on the local network can connect to, plus some incomplete game logic. The current state of it is on &nbsp;
+                <a href="https://github.com/Maksym-W/bloodOnTheClocktower" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>
+                my Github. <br></br>
+                </a>
                 </h3>
                 
                 {/* <a href="#flip" target="_blank" rel="noopener noreferrer" >
