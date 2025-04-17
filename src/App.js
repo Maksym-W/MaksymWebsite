@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Home from './pages/Home';
 import UofTResources from './pages/UofTResources';
-import Button from '@mui/material/Button';
 import CsProjects from './pages/CsProjects';
 import NavBar from './components/NavBar'; 
 

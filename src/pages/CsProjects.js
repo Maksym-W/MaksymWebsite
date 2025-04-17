@@ -1,7 +1,6 @@
 import React from 'react';
 import Robotics1 from '../images/Robotics1.jpg';
 import AnimatedPage from '../animations/transitions';
-import { Button } from '@mui/material';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -20,17 +19,6 @@ export default function CsProjects() {
         border: '25px solid #e4ddca',
         borderImage: 'linear-gradient(to bottom, #e4ddca, transparent) 1 49%'
     }
-
-    const textStyle =  {
-        color: 'white',
-        'text-align': 'center'
-    }
-
-    const navItemStyle = {
-        color: 'white', backgroundColor: '#15639A', borderColor: 'green',
-        padding: '5px', 
-        fontSize: '16px',
-      };
 
     const accordionStyle = {
         backgroundColor: 'black',
@@ -144,7 +132,7 @@ export default function CsProjects() {
                 <Button variant="contained" style={navItemStyle}>Flip</Button>
                 </a> */}
 
-                <img src={Robotics1} style={{ flex: '0 0 30%', marginLeft: '60px', ...pictureStyle }}/>
+                <img src={Robotics1} alt="Drink Machine" style={{ flex: '0 0 30%', marginLeft: '60px', ...pictureStyle }}/>
             </div>
         </AnimatedPage>
     )
