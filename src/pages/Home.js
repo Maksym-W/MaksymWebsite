@@ -10,7 +10,7 @@ export default function Home() {
         marginTop: '50px',
         height: 'auto',
         width: '50%',
-        border: '25px solid #e4ddca',
+        border: '1em solid #e4ddca',
         borderImage: 'linear-gradient(to bottom, #e4ddca, transparent) 1 49%'
       };
 
@@ -25,7 +25,7 @@ export default function Home() {
         <AnimatedPage>
             <div style={{marginTop: '20px'}}></div> {/* This is just for padding */}
 
-            <h1 style={{fontSize: '75px', ...textStyle}}>
+            <h1 style={{fontSize: '70px', ...textStyle}}>
                 I am Maksym Woychyshyn
             </h1>
             
@@ -35,34 +35,63 @@ export default function Home() {
                 I code. Perferably not on paper.
             </h2>
 
-            <div style={{ display: 'flex', flexWrap: 'wrap', marginTop: '20px' }}>
-                <h3 style={{ color: 'white', flex: '0 0 45%', marginLeft: '30px' }}>
-                I am currently a University Student at the University of Toronto where I take Math, Computer Science, 
-                and Political Science courses. By the time I graduate, I aim to have a bachelors in Science
-                with a Major (Ive already completed the requirements for this!) or a Specialist in Computer Science, 
-                a Major or Minor in Mathematics, and a minor in Political Science.
-                <br></br><br></br>
-                Outside of my Academic courses, I run the robotics club at UTM, involved in the UTM Urbanism Club as a treasurer, 
-                am the vice president of the UTM Chess club. and an advisor to the Ukrainian Association of UTM
-                <br></br><br></br>
-                When not partaking in my professional life, I can usually be found playing guitar or piano, video editing, 
-                learning languages, reading books about history/politics, or making projects with Arduinos. 
-                <br></br><br></br>
-                If you'd ever like to chat about work, school, or anything else, feel free to reach out to either of my
-                 emails m.woychyshyn@mail.utoronto.ca or maksymwoychyshyn@gmail.com.
-                </h3>
+            <>
+  <style>
+    {`
+      @media (max-width: 768px) {
+        .responsive-flex {
+          flex-direction: column !important;
+        }
+      }
+    `}
+  </style>
 
-                <h3 style={{ color: 'white', flex: '0 0 50%', marginLeft: '60px' }}>
-                As for future plans, I want to get into researching alot of CS topics. I have a list of things that I want to do research in that is included but not limited to:
-                Robotics, Machine Learning, Computer Graphics, Computer Systems, and Information Security. Lots of things to learn!
-                <br></br><br></br>
-                Im currently focusing on computer systems, specifically file systems. If you want to discuss something regarding file systems, please do reach out!
-                <br></br><br></br>
-                Aside from researching, like many people these days, I need a job! A short description of my resume is: I did a software internship at the government in the summer and fall terms
-                of 2024, and I am a good leader as a president in the robotics club. I do projects around video games and robotics. If you have a position open
-                in the summer of 2025 (Preferably something backend focused),  please absolutely do reach out!
-                </h3>
-            </div>
+  <div className="responsive-flex" style={{
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    color: 'white',
+    marginTop: '20px',
+    gap: '40px',
+    fontSize: '18px'
+  }}>
+    <div style={{ padding: '20px', flex: 1 }}>
+      <p>
+        I am currently an undergraduate University Student at the University of Toronto where I take Math, Computer Science, 
+        and Political Science courses. By the time I graduate in 2026, I aim to have a bachelors in Science
+        with a Specialist in Computer Science, a Major in Mathematics, and a minor in Political Science.
+        I am also a teaching assistant, where I TA Computational Complexity and Computability
+      </p>
+      <p>
+        Outside of my Academic courses, I am involved in mentoring clubs. I was the president of the UTM robotics club, and now I 
+        act in an advisory capacity to the club. I also do the same for the UTM Urbanism which I helped found.
+      </p>
+      <p>
+        When not partaking in my professional life, I can usually be found playing guitar or piano, video editing, 
+        learning languages, reading books about history/politics, or making projects with Arduinos/Raspberry Pis.
+      </p>
+    </div>
+
+    <div style={{ padding: '20px', flex: 1 }}>
+      <p>
+        As for future plans, I want to get into graduate school for either a masters or a PHd program.
+        Im not sure what specifically for, as I am currently narrowing down my list of interests for such a program.
+        My interests currently include: file systems, computer graphics, robotics, information security, and networks.
+      </p>
+      <p>
+        In this Summer, I will be involved in doing research courses on multiple topics. With Prof Bogdan Simion, I will be doing a 
+        file systems course. With Prof Marc De Benedetti, I will be doing an OpenGL reading course. With Prof Aurel Braun, I will be doing 
+        a Russia/Ukraine/Nato course. Quite the diverse range of topics!
+      </p>
+      <p>
+        If you'd ever like to chat about work, school, or anything else, feel free to reach out to either of my
+        emails m.woychyshyn@mail.utoronto.ca or maksymwoychyshyn@gmail.com.
+      </p>
+    </div>
+  </div>
+</>
+
         </AnimatedPage>
     )
 } 
