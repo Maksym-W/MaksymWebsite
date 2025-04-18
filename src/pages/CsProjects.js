@@ -1,5 +1,4 @@
 import React from 'react';
-import Robotics1 from '../images/Robotics1.jpg';
 import AnimatedPage from '../animations/transitions';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -9,17 +8,6 @@ import Typography from '@mui/material/Typography';
 
 
 export default function CsProjects() {
-    const pictureStyle = {
-        display: 'block',
-        'margin-left': 'auto',
-        'margin-right': 'auto',
-        marginTop: '50px',
-        height: (1750 / 3264) * 2448,
-        width: '40%',
-        border: '25px solid #e4ddca',
-        borderImage: 'linear-gradient(to bottom, #e4ddca, transparent) 1 49%'
-    }
-
     const accordionStyle = {
         backgroundColor: 'black',
         color: 'white',
@@ -27,10 +15,11 @@ export default function CsProjects() {
     };
 
     const codeString = `/**
-    Maksym's Drink Dispencer Machine: Rizz Spencer
+    Maksym's Drink Dispencer Machine
  
-    Copyright (C) 2024
-    I have no idea how licenses work. 
+    Copyright (C) 2025
+    This is the ideal code for the machine, utilizing a keypad and an LCD display. 
+    The code in the video is different, in that its just a button and digitalWrite to the relay. 
  */
  
  #include <LiquidCrystal.h>
@@ -104,7 +93,7 @@ export default function CsProjects() {
                 <h3 style={{ color: 'white', flex: '0 0 45%', marginLeft: '30px' }}>
                 This is the main project that I have been working on as of late. It functions like a keurig machine,
                  only that it has tubes sticking out of it that you can put into a bottle of coca-cola/pepsi/etc and it can make a drink for you. 
-                In the images below, you can see the current state of it. I will wire the thing up soon, and upload pictures of it. 
+                The video right next to me. I will wire the thing up soon, and upload pictures of it. 
 
                 <Accordion style={accordionStyle}>
                     <AccordionSummary 
@@ -121,18 +110,47 @@ export default function CsProjects() {
 
 
                 <hr></hr>
-                Im also working on a video game adaptation of blood on the clocktower. Currently, the code just sets up a server that other 
-                computers on the local network can connect to, plus some incomplete game logic. The current state of it is on &nbsp;
+                Im also working on a video game adaptation of blood on the clocktower. The techstack here is vite, electron, react, typescript.
+                The current state of it is on &nbsp;
                 <a href="https://github.com/Maksym-W/bloodOnTheClocktower" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>
                 my Github. <br></br>
                 </a>
+
+                <hr></hr>
+                I have also worked on plenty of school projects. The ones I am most proud of was either using vision machine learning to track
+                how many people are in a subway car to provide accurate updates about the subways capacity. More details can be found here: 
+                <a href="https://tycelm.github.io/track-the-crowd/" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>
+                https://tycelm.github.io/track-the-crowd/ <br></br>
+                </a>
+                A close second was a presentation on how ARP cache poisoning works, and how you could use it to do DNS spoofing
+
+                
                 </h3>
+
+                
                 
                 {/* <a href="#flip" target="_blank" rel="noopener noreferrer" >
                 <Button variant="contained" style={navItemStyle}>Flip</Button>
                 </a> */}
 
-                <img src={Robotics1} alt="Drink Machine" style={{ flex: '0 0 30%', marginLeft: '60px', ...pictureStyle }}/>
+                {/* <img src={Robotics1} alt="Drink Machine" style={{ flex: '0 0 30%', marginLeft: '60px', ...pictureStyle }}/> */}
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/36Ka0xX_gws"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{
+                    flex: '0 0 30%',
+                    marginLeft: '60px',
+                    marginTop: '50px',
+                    border: '25px solid #e4ddca',
+                    borderImage: 'linear-gradient(to bottom, #e4ddca, transparent) 1 49%',
+                  }}
+                />
+
             </div>
         </AnimatedPage>
     )
