@@ -122,7 +122,6 @@ export default function CsProjects() {
                 <a href="https://tycelm.github.io/track-the-crowd/" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>
                 https://tycelm.github.io/track-the-crowd/ <br></br>
                 </a>
-                A close second was a presentation on how ARP cache poisoning works, and how you could use it to do DNS spoofing
 
                 
                 </h3>
