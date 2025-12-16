@@ -117,11 +117,16 @@ export default function CsProjects() {
                 </a>
 
                 <hr></hr>
-                I have also worked on plenty of school projects. The ones I am most proud of was either using vision machine learning to track
+                I have also worked on plenty of school projects. I already mentioned some in the grad school section on the home page (
+                  <a href="https://ssd-visualizer.vercel.app/visualizer" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>click here</a> for the link to the educational SSD visualizer I worked on at UofT),
+                but in addition, I have also worked on physical hardware projects such as vision machine learning to track
                 how many people are in a subway car to provide accurate updates about the subways capacity. More details can be found here: 
                 <a href="https://tycelm.github.io/track-the-crowd/" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>
                 https://tycelm.github.io/track-the-crowd/ <br></br>
                 </a>
+
+
+                <hr></hr>
 
                 
                 </h3>

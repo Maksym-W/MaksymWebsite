@@ -60,10 +60,13 @@ export default function Home() {
                 <div className="responsive-flex" style={textBoxStyle}>
                     <div style={{ padding: '20px', flex: 1 }}>
                     <p>
+                        <h3>More about me:</h3>
                         I am currently an undergraduate University Student at the University of Toronto where I take Math, Computer Science, 
                         and Political Science courses. By the time I graduate in 2026, I aim to have a bachelors in Science
                         with a Specialist in Computer Science, a Major in Mathematics, and a minor in Political Science.
-                        I am also a teaching assistant, where I TA Computational Complexity and Computability
+                        My work history includes my current position as a teaching assistant for CSC369H5: operating systems. 
+                        I also previously TAed computational Complexity, and held a software internship for the Canadian Government, where
+                        I was responsible for fullstack web design. 
                     </p>
                     <p>
                         Outside of my Academic courses, I am involved in mentoring clubs. I was the president of the UTM robotics club, and now I 
@@ -77,14 +80,19 @@ export default function Home() {
 
                     <div style={{ padding: '20px', flex: 1 }}>
                     <p>
-                        As for future plans, I want to get into graduate school for either a masters or a PHd program.
-                        Im not sure what specifically for, as I am currently narrowing down my list of interests for such a program.
-                        My interests currently include: file systems, computer graphics, robotics, information security, and networks.
+                        <h3>Graduate School Notice:</h3>
+                        As for future plans, I want to get into a masters program at a graduate school.
+                        I have narrowed down my specific interests to distributed systems, information security, and computer graphics.
                     </p>
                     <p>
-                        In this Summer, I will be involved in doing research courses on multiple topics. With Prof Bogdan Simion, I will be doing a 
-                        file systems course. With Prof Marc De Benedetti, I will be doing an OpenGL reading course. With Prof Aurel Braun, I will be doing 
-                        a Russia/Ukraine/Nato course. Quite the diverse range of topics!
+                        My motivation for graduate school stems from having done senior level courses at UofT, where I would investigate a topic and do a project.
+                        These include taking a reading course in file systems with Professor Bogdan Simion 
+                        (I built an SSD visualizer in the course, and also investigated different file system
+                        concepts such as building a file system using data structures, distributed file systems etc.). 
+                        I also took a course in computer security with Professor Andi Bergen 
+                        (I investigated how arp cache poisoning worked, and used that to spoof websites).
+                        Another such course that I am currently doing is a graphic course with Professor Marc De Benedetti, where I, along with my 
+                        classmates, are involved in creating a graphics engine. My responsibilities for the engine include animation and physics simulation.
                     </p>
                     <p>
                         If you'd ever like to chat about work, school, or anything else, feel free to reach out to either of my
