@@ -24,7 +24,7 @@ function UofTResources() {
       </div>
         </p>
 
-        <h2 style={{color: 'white'}}>These sites are for Mathematics</h2>
+        <h2 style={{color: 'white'}}>These sites are for Computer Science</h2>
         <hr />
         <a href="https://mcs.utm.utoronto.ca/~108s21/index.html" target =" blank" style={textStyle}>
             CSC108 (Intro to Computer Programming) <br></br>

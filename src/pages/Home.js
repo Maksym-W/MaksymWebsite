@@ -61,12 +61,13 @@ export default function Home() {
                     <div style={{ padding: '20px', flex: 1 }}>
                     <p>
                         <h3>More about me:</h3>
-                        I am currently an undergraduate University Student at the University of Toronto where I take Math, Computer Science, 
+                        I am currently an undergraduate University Student at the University of Toronto where I take Math, Computer Science,
                         and Political Science courses. By the time I graduate in 2026, I aim to have a bachelors in Science
                         with a Specialist in Computer Science, a Major in Mathematics, and a minor in Political Science.
-                        My work history includes my current position as a teaching assistant for CSC369H5: operating systems. 
-                        I also previously TAed computational Complexity, and held a software internship for the Canadian Government, where
-                        I was responsible for fullstack web design. 
+                        My work history includes my current position as a teaching assistant for CSC148: Intro to Computer Science and
+			CSC363: Computational Complexity and Computability.
+			I also previously TAed CSC369: Operating systems, and held a software internship for the Canadian Government, where
+                        I was responsible for fullstack web design.
                     </p>
                     <p>
                         Outside of my Academic courses, I am involved in mentoring clubs. I was the president of the UTM robotics club, and now I 
