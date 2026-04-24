@@ -4,6 +4,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
+import braille from '../images/braille.jpg';
 
 
 
@@ -13,6 +14,17 @@ export default function CsProjects() {
         color: 'white',
         border: '1px solid #e4ddcb',
     };
+
+    const pictureStyle = {
+        display: 'block',
+        'margin-left': 'auto',
+        'margin-right': 'auto',
+        marginTop: '50px',
+        height: 'auto',
+        width: '50%',
+        border: '1em solid #e4ddca',
+        borderImage: 'linear-gradient(to bottom, #e4ddca, transparent) 1 49%'
+      };
 
     const codeString = `/**
     Maksym's Drink Dispencer Machine
@@ -89,55 +101,52 @@ export default function CsProjects() {
 
     return (
         <AnimatedPage>
-                <div style={{ display: 'flex', flexWrap: 'wrap', marginTop: '20px' }}>
-                <h3 style={{ color: 'white', flex: '0 0 45%', marginLeft: '30px' }}>
-                This is the main project that I have been working on as of late. It functions like a keurig machine,
-                 only that it has tubes sticking out of it that you can put into a bottle of coca-cola/pepsi/etc and it can make a drink for you. 
-                The video right next to me. I will wire the thing up soon, and upload pictures of it. 
+                <div style={{ display: 'flex', flexWrap: 'flex-start', marginTop: '20px' }}>
+                    <h3 style={{ color: 'white', flex: '0 0 45%', marginLeft: '30px' }}>
+                    The main project that I will be working on this summer is a braille device reader.
+                    I originally started this project with&nbsp;
+                    <a href="https://www.linkedin.com/in/jessica-wen1021/" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>Jessica Wen</a> and&nbsp;
+                    <a href="https://www.linkedin.com/in/devin-mendes-24b609330/" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>Devin Mendes</a>&nbsp;
+                    in collaboration with Dr. Daniel Zingaro at UTM, and we created a solenoid based braille reader,
+                    where the solenoids are controlled with relays and an Arduino. We aim to continue working on this
+                    during the summer to improve its capabilities, while ensuring it keeps a low cost per braille cell (less then 20 dollars per cell). 
+                    <hr></hr>
 
-                <Accordion style={accordionStyle}>
-                    <AccordionSummary 
-                        style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
-                    >
-                        <Typography>Click me to see the code for the robot.</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <pre style={{ whiteSpace: 'pre-wrap', color: 'white' }}>
-                            <code>{codeString}</code>
-                        </pre>
-                    </AccordionDetails>
-                </Accordion>
+                    This is the main project that I have been working on as of late. It functions like a keurig machine,
+                    only that it has tubes sticking out of it that you can put into a bottle of coca-cola/pepsi/etc and it can make a drink for you. 
+                    The video right next to me. I will wire the thing up soon, and upload pictures of it. 
 
+                    <Accordion style={accordionStyle}>
+                        <AccordionSummary 
+                            style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
+                        >
+                            <Typography>Click me to see the code for the robot.</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <pre style={{ whiteSpace: 'pre-wrap', color: 'white' }}>
+                                <code>{codeString}</code>
+                            </pre>
+                        </AccordionDetails>
+                    </Accordion>
 
-                <hr></hr>
-                Im also working on a video game adaptation of blood on the clocktower. The techstack here is vite, electron, react, typescript.
-                The current state of it is on &nbsp;
-                <a href="https://github.com/Maksym-W/bloodOnTheClocktower" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>
-                my Github. <br></br>
-                </a>
+                    <hr></hr>
+                    I have also worked on plenty of school projects. I have built a game engine in the computer graphics courses I took.
+                    <a href="https://github.com/P0k3rf4ce/SauceEngine" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>Click here for link </a>
+                    I have also worked on other physical hardware projects such as vision machine learning to track
+                    how many people are in a subway car to provide accurate updates about the subways capacity. More details can be found here: 
+                    <a href="https://tycelm.github.io/track-the-crowd/" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>
+                    https://tycelm.github.io/track-the-crowd/ <br></br>
+                    </a>
+                    </h3>
 
-                <hr></hr>
-                I have also worked on plenty of school projects. I already mentioned some in the grad school section on the home page (
-                  <a href="https://ssd-visualizer.vercel.app/visualizer" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>click here</a> for the link to the educational SSD visualizer I worked on at UofT),
-                but in addition, I have also worked on physical hardware projects such as vision machine learning to track
-                how many people are in a subway car to provide accurate updates about the subways capacity. More details can be found here: 
-                <a href="https://tycelm.github.io/track-the-crowd/" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>
-                https://tycelm.github.io/track-the-crowd/ <br></br>
-                </a>
-
-
-                <hr></hr>
-
-                
-                </h3>
-
-                
+                <div style={{flex: '0 0 200px', display: 'flex', flexDirection: 'column', alignItems: 'center', marginLeft: '80px',}}>
                 
                 {/* <a href="#flip" target="_blank" rel="noopener noreferrer" >
                 <Button variant="contained" style={navItemStyle}>Flip</Button>
                 </a> */}
 
-                {/* <img src={Robotics1} alt="Drink Machine" style={{ flex: '0 0 30%', marginLeft: '60px', ...pictureStyle }}/> */}
+                {<img src={braille} alt="Drink Machine" style={{ flex: '0 0 30%', maxWidth: '500px', marginLeft: '60px', ...pictureStyle }}/>} 
+
                 <iframe
                   width="560"
                   height="315"
@@ -154,7 +163,7 @@ export default function CsProjects() {
                     borderImage: 'linear-gradient(to bottom, #e4ddca, transparent) 1 49%',
                   }}
                 />
-
+                </div>
             </div>
         </AnimatedPage>
     )

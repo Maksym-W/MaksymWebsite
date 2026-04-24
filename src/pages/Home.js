@@ -61,39 +61,44 @@ export default function Home() {
                     <div style={{ padding: '20px', flex: 1 }}>
                     <p>
                         <h3>More about me:</h3>
-                        I am currently an undergraduate University Student at the University of Toronto where I take Math, Computer Science,
-                        and Political Science courses. By the time I graduate in 2026, I aim to have a bachelors in Science
-                        with a Specialist in Computer Science, a Major in Mathematics, and a minor in Political Science.
-                        My work history includes my current position as a teaching assistant for CSC148: Intro to Computer Science and
-			CSC363: Computational Complexity and Computability.
-			I also previously TAed CSC369: Operating systems, and held a software internship for the Canadian Government, where
-                        I was responsible for fullstack web design.
+                        As of April 2026, I have completed my undergraduate studies! Its been quite a ride, and I did alot! I graduated with 29 credits,
+                        which is 9 more then is needed! I obtained a specialist in Computer Science alongside taking 10 additional CS courses, and ontop
+                        of that I also did a Math Major and a Political Science Minor 
+                        (Where I did research for Aurel Braun, 
+                        <a href="https://www.theglobeandmail.com/opinion/article-stronger-ukraine-only-acceptable-outcome-alaska-summit/" target =" blank" style={textStyle}>
+                        &nbsp;and helped with his articles!</a>).
                     </p>
                     <p>
-                        Outside of my Academic courses, I am involved in mentoring clubs. I was the president of the UTM robotics club, and now I 
-                        act in an advisory capacity to the club. I also do the same for the UTM Urbanism which I helped found.
+                        Alongside all the course work, I TAed intro to CS, Operating Systems,
+                        and Computational Complexity/Computability at UTM and UTSC, held an 8 month internship at the government of Canada,
+                        led the UTM robotics club as president, founded the UTM Urbanism club and was the initial treasurer (we got line 126 running in Mississauga!),
+                        published a paper on visualization tools with professors Bogdan Simion, Michael Liut, and Naaz Sibia, and coded an SSD visualizer for the paper
+                        with fellow student Stephen Clark. And there is so much more to mention (in projects). Im pretty proud of all of this!
                     </p>
                     <p>
-                        When not partaking in my professional life, I can usually be found playing guitar or piano, video editing, 
-                        learning languages, reading books about history/politics, or making projects with Arduinos/Raspberry Pis.
+                        As for future plans, I was accepted into a thesis based masters program at Toronto Metropolitan University,
+                        under the supervision of Sven Lilge. While the program
+                        doesn't start until September, I am already preparing, reading as many robotics papers that I can so I can be an effective masters
+                        student and researcher. 
+                    </p>
+                    <p>
+                        When not partaking in my professional life, I can usually be found playing guitar/piano/drums/bass 
+                        (I play drums for 1 band and bass for another)
+                        video editing, learning languages (I speak 5, learning Spanish right now!),
+                        reading books about history/politics, or making projects with Arduinos/Raspberry Pis.
                     </p>
                     </div>
 
                     <div style={{ padding: '20px', flex: 1 }}>
                     <p>
-                        <h3>Graduate School Notice:</h3>
-                        As for future plans, I want to get into a masters program at a graduate school.
-                        I have narrowed down my specific interests to distributed systems, information security, and computer graphics.
+                        <h3>Research Interests:</h3>
+                        I am interested in Robotics, and am currently looking into continuum and mobile robotics. I expect to be able to persue
+                        my robotics interest further when I am at TMU
                     </p>
                     <p>
-                        My motivation for graduate school stems from having done senior level courses at UofT, where I would investigate a topic and do a project.
-                        These include taking a reading course in file systems with Professor Bogdan Simion 
-                        (I built an SSD visualizer in the course, and also investigated different file system
-                        concepts such as building a file system using data structures, distributed file systems etc.). 
-                        I also took a course in computer security with Professor Andi Bergen 
-                        (I investigated how arp cache poisoning worked, and used that to spoof websites).
-                        Another such course that I am currently doing is a graphic course with Professor Marc De Benedetti, where I, along with my 
-                        classmates, are involved in creating a graphics engine. My responsibilities for the engine include animation and physics simulation.
+                        I do have other interests. I do think that CS Education is an interesting topic, and I am interested in how visualization tools 
+                        help students learn how concepts work. My SSD visualization paper was produced from this interest. I also think computer graphics,
+                        distributed systems, and cyber security is interesting, but it isn't my main focus.
                     </p>
                     <p>
                         If you'd ever like to chat about work, school, or anything else, feel free to reach out to either of my
