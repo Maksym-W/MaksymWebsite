@@ -205,6 +205,9 @@ function UofTResources() {
         <a href="https://eyolfson.com/courses/archive/uwaterloo/ece459/12winter/" target =" blank" style={textStyle}>
             ECE459 (Programming for Performance) <br></br>
         </a>
+	<a href="https://www.eecg.utoronto.ca/~ashvin/courses/ece419/current/" target =" blank" style={textStyle}>
+            ECE419 (Distributed Systems) <br></br>
+        </a>
 
 
 
