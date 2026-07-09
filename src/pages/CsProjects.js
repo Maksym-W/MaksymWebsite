@@ -105,23 +105,15 @@ export default function CsProjects() {
                 <div style={{ display: 'flex', flexWrap: 'flex-start', marginTop: '20px' }}>
                     <h3 style={{ color: 'white', marginLeft: '30px', marginRight: '30px' }}>
 
-                    This is the main project that I have been working on as of late. It functions like a keurig machine,
-                    only that it has tubes sticking out of it that you can put into a bottle of coca-cola/pepsi/etc and it can make a drink for you. 
-                    The video right next to me. I will wire the thing up soon, and upload pictures of it. 
-
                     <div>
                       <Accordion style={accordionStyle}>
                           <AccordionSummary style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                               <Typography>Drink Robot</Typography>
                           </AccordionSummary>
                           <AccordionDetails>
-                              The main project that I will be working on this summer is a braille device reader.
-                              I originally started this project with&nbsp;
-                              <a href="https://www.linkedin.com/in/jessica-wen1021/" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>Jessica Wen</a> and&nbsp;
-                              <a href="https://www.linkedin.com/in/devin-mendes-24b609330/" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>Devin Mendes</a>&nbsp;
-                              in collaboration with Dr. Daniel Zingaro at UTM, and we created a solenoid based braille reader,
-                              where the solenoids are controlled with relays and an Arduino. We aim to continue working on this
-                              during the summer to improve its capabilities, while ensuring it keeps a low cost per braille cell (less then 20 dollars per cell). 
+                              This is a project that I have worked on in the past. It functions like a keurig machine,
+	                      only that it has tubes sticking out of it that you can put into a bottle of coca-cola/pepsi/etc and it can make a drink for you. 
+        	              Its close to completion, I just need to find some time to complete it. 
 
                               <pre style={{ whiteSpace: 'pre-wrap', color: 'white' }}>
                                 <iframe
@@ -148,9 +140,13 @@ export default function CsProjects() {
                               <Typography>Braille Device</Typography>
                           </AccordionSummary>
                           <AccordionDetails>
-                              This is the main project that I have been working on as of late. It functions like a keurig machine,
-                              only that it has tubes sticking out of it that you can put into a bottle of coca-cola/pepsi/etc and it can make a drink for you. 
-                              The video right next to me. I will wire the thing up soon, and upload pictures of it. 
+                              The main project that I will be working on this summer is a braille device reader.
+                              I originally started this project with&nbsp;
+                              <a href="https://www.linkedin.com/in/jessica-wen1021/" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>Jessica Wen</a> and&nbsp;
+                              <a href="https://www.linkedin.com/in/devin-mendes-24b609330/" target =" blank" style={{color: 'cyan', 'text-align': 'center' }}>Devin Mendes</a>&nbsp;
+                              in collaboration with Dr. Daniel Zingaro at UTM, and we created a solenoid based braille reader,
+                              where the solenoids are controlled with relays and an Arduino. We aim to continue working on this
+                              during the summer to improve its capabilities, while ensuring it keeps a low cost per braille cell (less then 20 dollars)
                               <pre style={{ whiteSpace: 'pre-wrap', color: 'white' }}>
                                   <img src={braille} alt="Drink Machine" style={{ flex: '0 0 30%', maxWidth: '500px', marginLeft: '60px', ...pictureStyle }}/>
                               </pre>
