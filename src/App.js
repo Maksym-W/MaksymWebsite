@@ -5,8 +5,6 @@ import CsProjects from './pages/CsProjects';
 import NavBar from './components/NavBar'; 
 
 function App() {
-  const [activeTab, setActiveTab] = useState('home'); 
-
   const handleTabChange = (tab) => {
     setActiveTab(tab);
   };
@@ -32,9 +30,15 @@ function App() {
 
   const navItemStyle = {
     color: 'white', backgroundColor: '#15639A', borderColor: 'green',
-    padding: '5px', 
+    padding: '5px',
     fontSize: '16px',
   };
+
+  const params = new URLSearchParams(window.location.search);
+
+  const [activeTab, setActiveTab] = useState(
+    params.get("tab") || "home"
+  );
 
 // The above stuff is the CSS Styles. Below is the component we return.
 
@@ -48,10 +52,10 @@ function App() {
         navStyle={navStyle}
         navItemStyle={navItemStyle}
       />
-      
+
       <div style={{marginTop: '60px'}}></div> 
       {/* This is just for padding */}
-      
+ 
       <hr style={{
         position: 'fixed',
         top: '50px',  // Adjust as needed

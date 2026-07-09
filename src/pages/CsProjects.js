@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useState } from "react";
 import AnimatedPage from '../animations/transitions';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import braille from '../images/braille.jpg';
-
 
 
 export default function CsProjects() {
@@ -26,6 +25,11 @@ export default function CsProjects() {
         border: '1em solid #e4ddca',
         borderImage: 'linear-gradient(to bottom, #e4ddca, transparent) 1 49%'
       };
+
+
+    const params = new URLSearchParams(window.location.search);
+
+    const [expanded, setExpanded] = useState(params.get("project") === "braille" ? "braille" : false);
 
     const codeString = `/**
     Maksym's Drink Dispencer Machine
@@ -106,7 +110,8 @@ export default function CsProjects() {
                     <h3 style={{ color: 'white', marginLeft: '30px', marginRight: '30px' }}>
 
                     <div>
-                      <Accordion style={accordionStyle}>
+                      <Accordion style={accordionStyle}
+    			expanded={expanded === "drink"} onChange={() => setExpanded(expanded === "drink" ? false : "drink")}>
                           <AccordionSummary style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                               <Typography>Drink Robot</Typography>
                           </AccordionSummary>
@@ -135,7 +140,9 @@ export default function CsProjects() {
                               </pre>
                           </AccordionDetails>
                       </Accordion>
-                      <Accordion style={accordionStyle}>
+
+                      <Accordion style={accordionStyle}
+                         expanded={expanded === "braille"} onChange={() => setExpanded(expanded === "braille" ? false : "braille")}>
                           <AccordionSummary style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                               <Typography>Braille Device</Typography>
                           </AccordionSummary>
